@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+ {% block title %}お問い合わせ{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%block header1%}
+{% for  field in   form %}
+{{field}}
+{% endfor %}
+{% endblock %}
+
+
+</body>
+</html>
