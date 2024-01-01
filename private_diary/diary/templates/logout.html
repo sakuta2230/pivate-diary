@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}ログアウト{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ログアウト</title>
+</head>
+<body>
+{%block header1%}
+    <h1>ログアウトしました</h1>
+　　<p><a href="{% url 'home' %}">ホームに戻る</a></p>
+{% endblock %}
+</body>
+</html>

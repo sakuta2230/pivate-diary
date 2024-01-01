@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}日記リスト{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日記リスト</title>
+</head>
+<body>
+{%block header1%}
+
+
+    <table>
+        <tr>
+            <th>{{user.id}} </th>
+            <th>{{user.username}} </th>
+            <th>タイトル</th>
+            <th>操作</th>
+        </tr>
+
+        {% for blogcon in contents %}
+
+                 <tr>
+
+                 <td><a href="detail/{{blogcon.id}}">{{blogcon.title}}</a></td>
+                 <td><a href="update/{{blogcon.id}}">更新</a></td>
+                 <td><a href="delete/{{blogcon.id}}">削除</a></td>
+
+                 </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <li><a href="add">追加</a></li>
+
+
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}日記詳細{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日記詳細</title>
+</head>
+<body>
+{%block header1%}
+<p>{{blogcon.title}}</p>
+<p>{{blogcon.date}}</p>
+<p>{{blogcon.Contents}}</p>
+<p>{{blogcon.is_publick}}</p>
+{% endblock %}
+</body>
+</html>
