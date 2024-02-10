@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ホームページ</title>
+</head>
+<body>
+    {% for article in article_list %}
+        <a href={% url 'detail' article.pk  %}>
+        {{article.title}}</a>
+        <p> {{article.pk}}</p>
+    {% endfor %}
+    <a href={% url 'logout'  %}>ログアウト</a>
+</body>
+</html>
